@@ -3,7 +3,7 @@ import { AppRegistry, FlatList, StyleSheet,
    Text, View, TextInput, TouchableOpacity } from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import Form from './login/signupform.js'
+import Form from '../Screens/signupform.js'
 
 
 export default class login extends Component{

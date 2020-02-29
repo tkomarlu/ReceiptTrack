@@ -1,0 +1,23 @@
+{
+    "MonthlyRecording": {
+        "January": [
+          {"x": "Toast", "y": 100 , "z": "Toast", "z": "Cat 1"}, {"x": "Water", "y": 200 , "z": "Cat 1"},
+          {"x": "Soup", "y": 300 , "z": "Cat 2"}, {"x": "Cheese", "y": 400 , "z": "Cat 3"},
+          {"x": "Potato", "y": 500 , "z": "Cat 4"}
+        ],
+        "February": [
+          {"x": "Toast", "y": 20 , "z": "Cat 1"}, {"x": "Water", "y": 200 , "z": "Cat 1"},
+          {"x": "Soup", "y": 300 , "z": "Cat 2"}, {"x": "Cheese", "y": 400 , "z": "Cat 1"},
+          {"x": "Potato", "y": 500 , "z": "Cat 4"}
+        ],
+        "March": [{"x": "Toast", "y": 300 , "z": "Cat 1"}, {"x": "Water", "y": 200 , "z": "Cat 1"},
+        {"x": "Soup", "y": 120 , "z": "Cat 1"}, {"x": "Cheese", "y": 400 , "z": "Cat 1"},
+        {"x": "Potato", "y": 500 , "z": "Cat 3"}
+        ],
+        "April": [{"x": "Toast", "y": 400 , "z": "Cat 1"}, {"x": "Water", "y": 200 , "z": "Cat 1"},
+        {"x": "Soup", "y": 300 , "z": "Cat 1"}, {"x": "Cheese", "y": 400 , "z": "Cat 1"},
+        {"x": "Potato", "y": 100 , "z": "Cat 4"}
+        ]
+
+    }
+}
