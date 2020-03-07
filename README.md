@@ -28,3 +28,5 @@ Below is an example of the original Kaggle dataset that we downloaded
 <br/>
 
 On this original csv file from which we got our clothing data, we separated and used only the Product Display Name column as our clothing category data on which the machine learning model was trained on. The csv files for our other three cateogries simiarly contained extra columns that were not necesssary to train our model, so we removed those columns. 
+<br/>
+There were also some miscategorized prodcuts such as lemon-flavored soap that were under incorrectly under "Food and Drink" instead of "Home and Office". We had to manually go through the datasets to remove irregularities like these that would have caused  our classifier to incorrectly assign labels to such products. 
