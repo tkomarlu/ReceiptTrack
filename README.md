@@ -12,7 +12,7 @@ The main purpose of this work was to evaluate how a machine learning approach co
 # Methodology
 Below is an example of the original Kaggle dataset that we downloaded 
 
-gender | masterCategory | subCategory      | articleType      | baseColour | season | year | usage  | productDisplayName                                    |
+|gender | masterCategory | subCategory      | articleType      | baseColour | season | year | usage  | productDisplayName                                   |
 |-------|--------|----------------|------------------|------------------|------------|--------|------|--------|-------------------------------------------------------|
 | Men    | Apparel        | Topwear          | Shirts           | Navy Blue  | Fall   | 2011 | Casual | Turtle Check Men Navy Blue Shirt                      |
 | Men    | Apparel        | Bottomwear       | Jeans            | Blue       | Summer | 2012 | Casual | Peter England Men Party Blue Jeans                    |
