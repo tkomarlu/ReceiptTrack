@@ -1,4 +1,4 @@
-## Receipt Track
+# Receipt Track
 
 ## Contributors
 Tanay Komarlu, Andrew Kung, Pranav Acharya
