@@ -22,6 +22,11 @@ Walking through the steps:
 4. This JSON is handed to our model and classified. Once the processing has completed, success or fail, the results are handed off to the Processing Callback function to update the database. 
 5. The React Native app is then updated with the use of a Restful API built with API Gateway. This AWS service allows us to create, deploy, and manage a REST application programming interface (API) to expose our AWS Lambda functions. 
 
+### Front End
+![](ReadMeImages/Wireframe.png)
+
+We utilized React Native to create the frontend for our application. The design of our application contains a login page which leads to a homepage. There is a bottom tab from which an user can access a transaction page, a spending visualization page, and a settings page. From the homepage, we can access a page that allows us upload images from our device to AWS S3 bucket. We structured our application this way because we wanted to keep our application simple for users. Each page has one function which minimizes the amount of actions which users need to take.
+
 ### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
 
@@ -46,7 +51,7 @@ Below is an example of the original Kaggle dataset that we downloaded
 
 <br/>
 
-On this original csv file from which we got our clothing data, we separated and used only the Product Display Name column as our clothing category data on which the machine learning model was trained on. The csv files for our other three cateogries simiarly contained extra columns that were not necesssary to train our model, so we removed those columns. 
+On this original csv file from which we collected our clothing data, we separated and used only the Product Display Name column as our clothing category data on which the machine learning model was trained on. The csv files for our other three cateogries simiarly contained extra columns that were not necesssary to train our model, so we removed those columns. 
 
 <br/>
 
@@ -55,7 +60,6 @@ There were also some miscategorized prodcuts such as lemon-flavored soap that we
 ### Pre-processing
 
 Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on the training data, we converted the product names into multi-dimensional numerical vectors based on keyword and temr frequency calculations. This step was necessary because our Sci-Kit Learn LinearSVC Model can only train on numerical data.
-
 
 
 ### Defining Success
@@ -79,10 +83,6 @@ Our confusion plot verified that our LinearSVC model had a very high accuracy wh
 
 F1 score is the harmonic mean between precision and recall for each category. To calculate the precision, recall, and F1 values for each of the four categories, we used the one-vs-all strategy where we trained a single classifier for each class with samples of that class as positive and all other samples as negative. 
 
-### Design Layout
-![](ReadMeImages/Wireframe.png)
-
-We utilized React Native to create the frontend for our application. The design of our application contains a login page which leads to a homepage. There is a bottom tab from which an user can access a transaction page, a spending visualization page, and a settings page. From the homepage, we can access a page that allows us upload images from our device to AWS S3 bucket. We structured our application this way because we wanted to keep our application simple for users. Each page has one function which minimizes the amount of actions which users need to take.
 
 ## Summary
 
