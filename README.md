@@ -7,7 +7,7 @@ Tanay Komarlu, Andrew Kung, Pranav Acharya
 This project focuses on multi-class classification to generate a personalized monthly expense report for users to aid in keeping track of their monthly finances. We made use of Linear Support Vector Classification with SciKit Learn and e-commerce data collected from datasets on Kaggle. We present the results of this classification through the use of a serverless mobile application developed using React Native. The users upload images of receipts which are processed with Textract, Amazon's OCR engine, and then classified by our classifier, hosted on SageMaker. The results were promising with about 98 % cross validation score for classifying receipt items based on category with the help of the LinearSVC classifier.
 
 ## Motivation
-Managing your personal expenses can be a daunting task for college students. Students need to smartly manage their day-to-day expenses. Our goal is to enable students to take charge of their personal finance and make more informed decisions relating to their spending habits. Upon making a transaction with cash, credit or debit, students will recieve a receipt. For years, the classic approach has been a shoebox stuffed full of receipts. Our goal was to provide a mobile application that could fill the role of the shoebox by allowing students to upload images of receipts and recieve a personalized expense report.
+Managing your personal expenses can be a daunting task for college students. Students need to smartly manage their day-to-day expenses. Our goal is to enable students to take charge of their personal finance and make more informed decisions relating to their spending habits. Upon making a transaction with cash, credit or debit, students will receive a receipt. For years, the classic approach has been a shoebox stuffed full of receipts. Our goal was to provide a mobile application that could fill the role of the shoebox by allowing students to upload images of receipts and receive a personalized expense report.
 
 ## Methodology
 
@@ -56,15 +56,15 @@ Below is an example of the original Kaggle dataset that we downloaded
 
 <br/>
 
-On this original csv file from which we collected our clothing data, we separated and used only the Product Display Name column as our clothing category data on which the machine learning model was trained on. The csv files for our other three cateogries simiarly contained extra columns that were not necesssary to train our model, so we removed those columns. 
+On this original csv file from which we collected our clothing data, we separated and used only the Product Display Name column as our clothing category data on which the machine learning model was trained on. The csv files for our other three categories similarly contained extra columns that were not necessary to train our model, so we removed those columns. 
 
 <br/>
 
-There were also some miscategorized prodcuts such as lemon-flavored soap that were under incorrectly under "Food and Drink" instead of "Home and Office". We had to manually go through the datasets to remove irregularities like these that would have caused  our classifier to incorrectly assign labels to such products. 
+There were also some mislabeled products such as lemon-flavored soap that were under incorrectly under "Food and Drink" instead of "Home and Office". We had to manually go through the datasets to remove irregularities like these that would have caused  our classifier to incorrectly assign labels to such products. 
 
 ### Pre-processing
 
-Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on the training data, we converted the product names into multi-dimensional numerical vectors based on keyword and temr frequency calculations. This step was necessary because our Sci-Kit Learn LinearSVC Model can only train on numerical data.
+Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on the training data, we converted the product names into multi-dimensional numerical vectors based on keyword and term frequency calculations. This step was necessary because our Sci-Kit Learn LinearSVC Model can only train on numerical data.
 
 
 ### Defining Success
@@ -95,7 +95,7 @@ Our mean F1 score of .98 is extremely satisfactory because that means that almos
 
 <br/> 
 
-One difficulty that we had was obtaining adequate datasets for each of our categories. These categories are also so broad that we should constantly expand our training dataset and consistenly retrain our model to prevent drifting over time. Given additional time, we would broaden our dataset by scraping product names from well-known E-commerece sites like Amazon and Walmart. 
+One difficulty that we had was obtaining adequate datasets for each of our categories. These categories are also so broad that we should constantly expand our training dataset and consistently retrain our model to prevent drifting over time. Given additional time, we would broaden our dataset by scraping product names from well-known E-commerce sites like Amazon and Walmart. 
 
 <br/> 
 
