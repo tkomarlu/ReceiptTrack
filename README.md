@@ -28,7 +28,7 @@ Walking through the steps:
 Many of our users will upload their receipts shortly after receiving them. As a result, the user experience needs to be simple and streamlined. Users are able to view a chart of their monthly expenses on the first screen, which allows them to identify the categories with high cash outflow. The next page displays the expenses in a spreadsheet and organizes the data by category. The third page enables users to upload images to be processed. Users are also able to view sum totals of each category. With the settings page, users are able to set a monthly budget. The third screen also includes a progress bar which tells the users how close they are to crossing their budget.
 
 #### User Security
-As we will be dealing with personally identifiable information, there is the need to be able to securely authenticate our users. 
+As we will be dealing with personally identifiable information, there is the need to be able to securely authenticate our users. The application makes use of Single Sign On with Facebook to ensure that a user's data is kept private. 
 
 #### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
