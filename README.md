@@ -7,7 +7,7 @@ Tanay Komarlu, Andrew Kung, Pranav Acharya
 This project focuses on multi-class classification to generate a monthly expense report for users to aid in keeping track of their monthly finances. We made use of Linear Support Vector Classification with SciKit Learn and e-commerce data collected from datasets on Kaggle. We present the results of this classification through the use of a serverless mobile application developed using React Native. The users upload images of receipts which are processed with Textract, Amazon's OCR engine, and then classified by our classifier, hosted on SageMaker. The results were promising with about 98 % cross validation score for classifying receipt items based on category with the help of the LinearSVC classifier.
 
 ## Motivation
-Managing your personal expenses can be a daunting task. As college students, we need to smartly manage our day-to-day expenses. Our goal is to enable students to take charge of their personal finance and make more informed decisions relating to their spending habits. Tthis led us to develop an mobile application for a chain of services from user to database that handled the extraction and classification of receipt data.
+Managing your personal expenses can be a daunting task. As college students, we need to smartly manage our day-to-day expenses. Our goal is to enable students to take charge of their personal finance and make more informed decisions relating to their spending habits. This led us to develop an mobile application for a chain of services from user to database that handled the extraction and classification of receipt data.
 
 ## Methodology
 
