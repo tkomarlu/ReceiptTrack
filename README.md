@@ -60,7 +60,17 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 
 ### Defining Success
 
+#### Confusion Plot 
+
 ![](ReadMeImages/ConfusionPlot.png)
+
+#### F1 Score
+|       | |       | | precision| recall | f1-score |
+|=======| |=======||------|------|------|
+|Prodcut Category||Clothing|| 1.00 | 0.99 | 1.00 | 
+|                ||Entertainment| 0.98 | 0.98 | 0.98 |
+|                ||Food and Drink|| 0.98 | 0.97 | 0.98 |
+|                ||Home and Office| 0.97 | 0.98 | 0.98 |
 
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
