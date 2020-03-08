@@ -67,13 +67,11 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 #### F1 Score
 
 
-|              | Header 1        | Header 2       |        <       | Header 3       |        <       |
-|              | Subheader 1     | Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
-|==============|-----------------|----------------|----------------|----------------|----------------|
-| Row Header 1 | 3row, 3col span |       <        |        <       | Colspan only   |        <       |
-| Row Header 2 |       ^         |       <        |        <       | Rowspan only   | Cell           |
-| Row Header 3 |       ^         |       <        |        <       |       ^        | Cell           |
-| Row Header 4 |  Row            |  Each cell     |:   Centered   :| Right-aligned :|: Left-aligned  |
+| Category | Precision | Recall | f1-score | Support |
+| Clothing | 1.00 | 0.99 | 1.00 | 8524 |
+| Entertainment | 0.98 | 0.98 | 0.98 | 13172 |
+| Food and Drink | 0.98 | 0.97 | 0.98 | 7886 |
+| Home and Office | 0.97 | 0.98 | 0.98 | 10226 |
 
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
