@@ -40,3 +40,4 @@ There were also some miscategorized prodcuts such as lemon-flavored soap that we
 
 ### Pre-processing
 
+Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on the training data, I converted the product names into multi-dimensional numerical vectors based on calculations involving the keywords and term frequency in the product names.
