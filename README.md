@@ -64,6 +64,8 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 
 ![](ReadMeImages/ConfusionPlot.png)
 
+Our confusion plot verifies that our model classified the test set data with very high accuracy. 
+
 #### F1 Score
 
 
@@ -73,6 +75,9 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 | Entertainment | 0.98 | 0.98 | 0.98 | 13172 |
 | Food and Drink | 0.98 | 0.97 | 0.98 | 7886 |
 | Home and Office | 0.97 | 0.98 | 0.98 | 10226 |
+
+
+F1 score is the harmonic mean between precision and recall for 
 
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
