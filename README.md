@@ -11,6 +11,9 @@ The main purpose of this work was to evaluate how a machine learning approach co
 
 ## Methodology
 
+### High Level Architecture
+![](ReadMeImages/HighLevelArchitecture.png)
+
 ### Data Cleaning
 
 We planned to have our machine learning model classify our products into four categories: Clothing, Entertainment, Food and Drink, Home and Entertainment. So we had to find enough Kaggle datasets such that we had enough training data for each of these categories.
