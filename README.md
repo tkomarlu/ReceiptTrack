@@ -14,6 +14,14 @@ The main purpose of this work was to evaluate how a machine learning approach co
 ### High Level Architecture
 ![](ReadMeImages/HighLevelArchitecture.png)
 
+Walking through the steps:
+
+1. User takes a photo of the receipt and using the React Native app, chooses to upload the image for processing (AWS S3 Bucket)
+2. Once the image is uploaded the React Native app triggers a Lambda function that updates the database with a reference to the image in S3. 
+3. This also triggers another Lambda function which passes the image to Textract. Textract allows us to extract the text from the receipts. Textract hands off the actual processing of the text to another lambda function which cleans the extracted text into a formatted JSON which can be processed by our model. 
+4. This JSON is handed to our model and classified. Once the processing has completed, success or fail, the results are handed off to the Processing Callback function to update the database. 
+5. The React Native app is then updated with the use of a Restful API built with API Gateway. This AWS service allows us to create, deploy, and manage a REST application programming interface (API) to expose our AWS Lambda functions. 
+
 ### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
 
@@ -53,9 +61,6 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 ### Defining Success
 
 ![](ReadMeImages/ConfusionPlot.png)
-
-</br>
-Our confusion plot verified that our LinearSVC model had a very high accuracy when generating predictions on our test data. 
 
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
