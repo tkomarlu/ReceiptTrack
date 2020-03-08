@@ -22,13 +22,8 @@ Walking through the steps:
 4. This JSON is handed to our model and classified. Once the processing has completed, success or fail, the results are handed off to the Processing Callback function to update the database. 
 5. The React Native app is then updated with the use of a Restful API built with API Gateway. This AWS service allows us to create, deploy, and manage a REST application programming interface (API) to expose our AWS Lambda functions. 
 
-#### Database Design
+### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
-
-#### Front End
-![](ReadMeImages/Wireframe.png)
-
-We utilized React Native to create the frontend for our application. The design of our application contains a login page which leads to a homepage. There is a bottom tab from which an user can access a transaction page, a spending visualization page, and a settings page. From the homepage, we can access a page that allows us upload images from our device to AWS S3 bucket. We structured our application this way because we wanted to keep our application simple for users. Each page has one function which minimizes the amount of actions which users need to take.
 
 ### Data Cleaning
 
@@ -83,3 +78,15 @@ Our confusion plot verified that our LinearSVC model had a very high accuracy wh
 
 
 F1 score is the harmonic mean between precision and recall for each category. To calculate the precision, recall, and F1 values for each of the four categories, we used the one-vs-all strategy where we trained a single classifier for each class with samples of that class as positive and all other samples as negative. 
+
+### Design Layout
+![](ReadMeImages/Wireframe.png)
+
+We utilized React Native to create the frontend for our application. The design of our application contains a login page which leads to a homepage. There is a bottom tab from which an user can access a transaction page, a spending visualization page, and a settings page. From the homepage, we can access a page that allows us upload images from our device to AWS S3 bucket. We structured our application this way because we wanted to keep our application simple for users. Each page has one function which minimizes the amount of actions which users need to take.
+
+## Summary
+
+Our mean F1 score of .98 is extremely satisfactory because that means that almost all of the products were correctly classified into their respective categories by the machine learning model. 
+
+<br/> 
+One difficulty that we had was obtaining adequate datasets for each of our categories. These categories are also so broad that we should constantly expand our training dataset and consistenly retrain our model to prevent drifting over time. Given additional time, we would broaden our dataset by scraping product names from well-known E-commerece sites like Amazon and Walmart. 
