@@ -77,7 +77,7 @@ Our confusion plot verified that our LinearSVC model had a very high accuracy wh
 | Home and Office | 0.97 | 0.98 | 0.98 | 10226 |
 
 
-F1 score is the harmonic mean between precision and recall for 
+F1 score is the harmonic mean between precision and recall for each category. To calculate the precision, recall, and F1 values for each of the four categories, we used the one-vs-all strategy where we trained a single classifier for each class with samples of that class as positive and all other samples as negative. 
 
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
