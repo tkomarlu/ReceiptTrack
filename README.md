@@ -22,18 +22,18 @@ Walking through the steps:
 4. This JSON is handed to our model and classified. Once the processing has completed, success or fail, the results are handed off to the Processing Callback function to update the database. 
 5. The React Native app is then updated with the use of a Restful API built with API Gateway. This AWS service allows us to create, deploy, and manage a REST application programming interface (API) to expose our AWS Lambda functions. 
 
-#### User Security
-As we will be dealing with private user data, we need to be able to securely authenticate our users. This led us to pursue single sign-on as our identification system to allow us to delegate the authenication of our users to a trusted third party. Namely, we made use of OAuth2 to make it easy for users to log into our app with their facebook account. 
-
 #### User Experience
 ![](ReadMeImages/Wireframe.png)
 
- 
+Many of our users will upload their receipts shortly after receiving them. As a result, the user experience needs to be simple and streamlined. Users are able to view a chart of their monthly expenses on the first screen, which allows them to identify the categories with high cash outflow. The second page displays the expenses in a spreadsheet and organizes the data by category. Users are able to view sum totals of each category on the third page. With the settings page, users are able to set a monthly budget. The third page also includes a progress bar which tells the users how close they are to crossing their budget.
+
+#### User Security
+As we will be dealing with personally identifiable information, there is the need to be able to securely authenticate our users. This led us to pursue single sign-on as our identification system to allow us to delegate the authenication of our users to a trusted third party. With OAuth2, users are able to log into our app with their facebook account. 
 
 #### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
 
-Our database is updated with the use of a RESTful API built with AWS API Gateway. This allows us to update our AWS Relational Database Service instance with new user, receipt and item data. When a new user logs in with a Facebook account, we store their unique user id. Facebook assigns each profile with a unique number and we can make use of this to keep track of our users. Our database is then maintained with the use of Lambda functions which are triggered when a user uploads an image. We normalized our database in order to reduce our data redunancy improve data integrity.
+Our data model has entities that store user, receipt and item data. The user data is updated when a new user signs onto the application for the first time. While the user's receipt and item data is updated when the receipt processing function is finished. Our database is normalized in order to reduce our data redunancy and improve data integrity. We make use of a MySQL database hosted on AWS's Relation Database Service.
 
 ### Data Cleaning
 
