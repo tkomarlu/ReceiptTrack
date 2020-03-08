@@ -40,7 +40,7 @@ There were also some miscategorized prodcuts such as lemon-flavored soap that we
 
 ### Pre-processing
 
-Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on the training data, we converted the product names into multi-dimensional numerical vectors based on calculations involving the keywords and term frequency in the product names. This made it so that our sklearn LinearSVC Model
+Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on the training data, we converted the product names into multi-dimensional numerical vectors based on keyword and temr frequency calculations. This step was necessary because our Sci-Kit Learn LinearSVC Model can only train on numerical data.
 
 ### Design Layout
 We utilized React Native to create the frontend design for our application. The design of our application contains a login page which leads to a homepage. There is a bottom tab from which an user can access a transaction page, a spending visualization page, and a settings page. From the homepage, we can access a page that allows us upload images from our device to Amazon Web Services. We structured our application this way because we wanted to keep our application simple for users. Each page has one function. This minimizes the amount of actions which users need to take.
