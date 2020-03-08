@@ -46,7 +46,7 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 
 ### Defining Success
 
-<img src="ConfusionPlot.png" height="550" width="550">
+![](ConfusionPlot.png)
 
 ### Design Layout
 
