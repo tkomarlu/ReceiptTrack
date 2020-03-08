@@ -68,6 +68,7 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 
 
 | Category | Precision | Recall | f1-score | Support |
+|--------|--------|--------|--------|--------|
 | Clothing | 1.00 | 0.99 | 1.00 | 8524 |
 | Entertainment | 0.98 | 0.98 | 0.98 | 13172 |
 | Food and Drink | 0.98 | 0.97 | 0.98 | 7886 |
