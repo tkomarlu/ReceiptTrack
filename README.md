@@ -90,3 +90,6 @@ Our mean F1 score of .98 is extremely satisfactory because that means that almos
 
 <br/> 
 One difficulty that we had was obtaining adequate datasets for each of our categories. These categories are also so broad that we should constantly expand our training dataset and consistenly retrain our model to prevent drifting over time. Given additional time, we would broaden our dataset by scraping product names from well-known E-commerece sites like Amazon and Walmart. 
+
+<br/>
+Given time, we would also streamline the UX and UI of the front end. We may make use of user testing to better understand what users would like to see in this application.
