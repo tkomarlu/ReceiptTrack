@@ -12,6 +12,11 @@ The main purpose of this work was to evaluate how a machine learning approach co
 ## Methodology
 
 ### Data Cleaning
+
+We planned to have our machine learning model classify our products into four categories: Clothing, Entertainment, Food and Drink, Home and Entertainment. So we had to find enough Kaggle datasets such that we had enough training data for each of these categories.
+
+<br/>
+
 Below is an example of the original Kaggle dataset that we downloaded 
 
 | gender | masterCategory | subCategory      | articleType      | baseColour | season | year | usage  | productDisplayName                                    |
@@ -32,3 +37,6 @@ On this original csv file from which we got our clothing data, we separated and 
 <br/>
 
 There were also some miscategorized prodcuts such as lemon-flavored soap that were under incorrectly under "Food and Drink" instead of "Home and Office". We had to manually go through the datasets to remove irregularities like these that would have caused  our classifier to incorrectly assign labels to such products. 
+
+### Pre-processing
+
