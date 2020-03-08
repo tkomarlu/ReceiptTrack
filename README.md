@@ -66,8 +66,7 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 
 #### F1 Score
 
-| Caption Text |                 |                |                |                |                |
-|--------------|-----------------|----------------|----------------|----------------|----------------|
+
 |              | Header 1        | Header 2       |        <       | Header 3       |        <       |
 |              | Subheader 1     | Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
 |==============|-----------------|----------------|----------------|----------------|----------------|
