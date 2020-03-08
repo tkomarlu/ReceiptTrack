@@ -49,5 +49,5 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 ![](ReadMeImages/ConfusionPlot.png)
 
 ### Design Layout
-
+![](ReadMeImages/Wireframe.png)
 We utilized React Native to create the frontend design for our application. The design of our application contains a login page which leads to a homepage. There is a bottom tab from which an user can access a transaction page, a spending visualization page, and a settings page. From the homepage, we can access a page that allows us upload images from our device to Amazon Web Services. We structured our application this way because we wanted to keep our application simple for users. Each page has one function. This minimizes the amount of actions which users need to take.
