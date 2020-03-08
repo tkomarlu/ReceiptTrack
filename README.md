@@ -32,6 +32,7 @@ As we will be dealing with private user data, we need to be able to securely aut
 ### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
 
+Our database is updated with the use of a RESTful API built with AWS API Gateway. This allows us to update our AWS Relational Database Service instance with new user, receipt and item data. When a new user logs in with a Facebook account, we store their unique user id. Facebook assigns each profile with a unique number and we can make use of this to keep track of our users. Our database is then maintained with the use of Lambda functions which are triggered when a user uploads an image. We normalized our database in order to reduce our data redunancy improve data integrity.
 
 ### Data Cleaning
 
