@@ -7,7 +7,7 @@ Tanay Komarlu, Andrew Kung, Pranav Acharya
 This project focuses on multi-class classification to generate a personalized monthly expense report for users to aid in keeping track of their monthly finances. We made use of Linear Support Vector Classification with SciKit Learn and e-commerce data collected from datasets on Kaggle. We present the results of this classification through the use of a serverless mobile application developed using React Native. The users upload images of receipts which are processed with Textract, Amazon's OCR engine, and then classified by our classifier, hosted on SageMaker. The results were promising with about 98 % cross validation score for classifying receipt items based on category with the help of the LinearSVC classifier.
 
 ## Motivation
-Managing your personal expenses can be a daunting task for college students. Students need to smartly manage their day-to-day expenses. Our goal is to enable students to take charge of their personal finance and make more informed decisions relating to their spending habits. This led us to develop an mobile application for a chain of services from user to database that handled the extraction and classification of receipt data.
+Managing your personal expenses can be a daunting task for college students. Students need to smartly manage their day-to-day expenses. Our goal is to enable students to take charge of their personal finance and make more informed decisions relating to their spending habits. Upon making a transaction with cash, credit or debit, students will recieve a receipt. For years, the classic approach has been a shoebox stuffed full of receipts. Our goal was to provide a mobile application that could fill the role of the shoebox by allowing students to upload images of receipts and recieve a personalized expense report.
 
 ## Methodology
 
@@ -22,13 +22,16 @@ Walking through the steps:
 4. This JSON is handed to our model and classified. Once the processing has completed, success or fail, the results are handed off to the Processing Callback function to update the database. 
 5. The React Native app is then updated with the use of a Restful API built with API Gateway. This AWS service allows us to create, deploy, and manage a REST application programming interface (API) to expose our AWS Lambda functions. 
 
-### Front End
+As we will be dealing with private user data, we need to be able to securely authenticate our users. This led us to pursue single sign-on as our identification system to allow us to delegate the authenication of our users to a trusted third party. Namely, we made use of OAuth2 to make it easy for users to log into our app with their facebook account. 
+
+### User Experience
 ![](ReadMeImages/Wireframe.png)
 
-We utilized React Native to create the frontend for our application. The design of our application contains a login page which leads to a homepage. There is a bottom tab from which an user can access a transaction page, a spending visualization page, and a settings page. From the homepage, we can access a page that allows us upload images from our device to AWS S3 bucket. We structured our application this way because we wanted to keep our application simple for users. Each page has one function which minimizes the amount of actions which users need to take.
+ 
 
 ### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
+
 
 ### Data Cleaning
 
