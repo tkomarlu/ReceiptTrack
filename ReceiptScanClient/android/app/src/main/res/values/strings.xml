@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Receipts</string>
-    <string name="facebook_app_id">ID</string>
-    <string name="fb_login_protocol_scheme">fbID</string>
+    <string name="facebook_app_id">972990199726834</string>
+    <string name="fb_login_protocol_scheme">fb972990199726834</string>
 </resources>

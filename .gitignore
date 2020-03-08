@@ -1,3 +1,7 @@
 .idea/
 
 facebook.json
+
+finalized_model.sav
+
+vectorizer.pk
