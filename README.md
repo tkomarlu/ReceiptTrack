@@ -65,12 +65,11 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 ![](ReadMeImages/ConfusionPlot.png)
 
 #### F1 Score
-|       | |       | | precision| recall | f1-score |
-|=======| |=======||------|------|------|
-|Prodcut Category||Clothing|| 1.00 | 0.99 | 1.00 | 
-|                ||Entertainment| 0.98 | 0.98 | 0.98 |
-|                ||Food and Drink|| 0.98 | 0.97 | 0.98 |
-|                ||Home and Office| 0.97 | 0.98 | 0.98 |
+|              | Header 1        | Header 2       |        <       | Header 3       |        <       |
+|==============|-----------------|----------------|----------------|----------------|----------------|
+| Row Header 1 | 3row, 3col span |       <        |        <       | Colspan only   |        <       |
+| Row Header 2 |       ^         |       <        |        <       | Rowspan only   | Cell           |
+| Row Header 3 |       ^         |       <        |        <       |
 
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
