@@ -54,6 +54,9 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 
 ![](ReadMeImages/ConfusionPlot.png)
 
+</br>
+Our confusion plot verified that our LinearSVC model had a very high accuracy when generating predictions on our test data. 
+
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
 
