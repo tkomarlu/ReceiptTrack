@@ -46,7 +46,7 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 
 ### Defining Success
 
-
+<img src="news-brief-screenshot.png" height="550" width="1080">
 
 ### Design Layout
 
