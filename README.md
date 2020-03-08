@@ -65,11 +65,16 @@ Using sklearn’s TFIDFVectorizer (Term Frequency Inverse Document Frequency) on
 ![](ReadMeImages/ConfusionPlot.png)
 
 #### F1 Score
+
+| Caption Text |                 |                |                |                |                |
+|--------------|-----------------|----------------|----------------|----------------|----------------|
 |              | Header 1        | Header 2       |        <       | Header 3       |        <       |
+|              | Subheader 1     | Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
 |==============|-----------------|----------------|----------------|----------------|----------------|
 | Row Header 1 | 3row, 3col span |       <        |        <       | Colspan only   |        <       |
 | Row Header 2 |       ^         |       <        |        <       | Rowspan only   | Cell           |
-| Row Header 3 |       ^         |       <        |        <       |
+| Row Header 3 |       ^         |       <        |        <       |       ^        | Cell           |
+| Row Header 4 |  Row            |  Each cell     |:   Centered   :| Right-aligned :|: Left-aligned  |
 
 ### Design Layout
 ![](ReadMeImages/Wireframe.png)
