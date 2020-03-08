@@ -33,7 +33,7 @@ As we will be dealing with personally identifiable information, there is the nee
 #### Database Design
 ![](ReadMeImages/rdsDatabaseDesign.png)
 
-Our data model has entities that store user, receipt and item data. The user data is updated when a new user signs onto the application for the first time. While the user's receipt and item data is updated when the receipt processing function is finished. Our database is normalized in order to reduce our data redunancy and improve data integrity. We make use of a MySQL database hosted on AWS's Relation Database Service.
+Our data model has entities that store user, receipt and item data. The user data is updated when a new user signs onto the application for the first time. While the user's receipt and item data is updated when the receipt processing function is finished. Our database is normalized in order to reduce our data redundancy and improve data integrity. We make use of a MySQL database hosted on AWS's Relation Database Service.
 
 ### Data Cleaning
 
