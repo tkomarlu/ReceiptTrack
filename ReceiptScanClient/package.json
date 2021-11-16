@@ -8,7 +8,7 @@
   "dependencies": {
     "@react-native-community/cli-platform-android": "3.0.0-alpha.2",
     "aws-amplify-react-native": "^2.2.3",
-    "aws-sdk": "^2.592.0",
+    "aws-sdk": "^2.814.0",
     "native-base": "^2.13.8",
     "react": "16.9.0",
     "react-native": "0.61.2",
